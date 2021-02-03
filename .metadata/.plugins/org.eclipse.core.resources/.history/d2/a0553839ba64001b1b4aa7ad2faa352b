@@ -1,0 +1,44 @@
+package br.com.heranca.beans;
+
+public class Bacharelado extends Formacao {
+	
+	private boolean planoEstendido;
+
+	public boolean isPlanoEstendido() {
+		return planoEstendido;
+	}
+
+	public void setPlanoEstendido(boolean planoEstendido) {
+		this.planoEstendido = planoEstendido;
+	}
+
+	@Override
+	public String toString() {
+		return "Bacharelado [planoEstendido=" + planoEstendido + "]";
+	}
+
+	public Bacharelado(String descricao, int periodo, int duracao, double mensalidade, boolean planoEstendido) {
+		super(descricao, periodo, duracao, mensalidade);
+		this.planoEstendido = planoEstendido;
+	}
+
+	public void setAll(String descricao, int periodo, int duracao, double mensalidade, boolean planoEstendido) {
+		super.setAll(descricao, periodo, duracao, mensalidade);
+		this.planoEstendido = planoEstendido;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

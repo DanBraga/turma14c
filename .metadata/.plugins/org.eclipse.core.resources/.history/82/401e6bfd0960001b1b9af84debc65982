@@ -1,0 +1,18 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class TiposPrimitivos {
+	
+	public static void main(String[] args) {
+		
+		String marca = JOptionPane.showInputDialog("Marca:.." + marca);
+		
+		
+		
+		
+		
+		
+	}
+
+}

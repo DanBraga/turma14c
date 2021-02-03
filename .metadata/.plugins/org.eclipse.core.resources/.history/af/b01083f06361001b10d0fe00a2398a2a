@@ -1,0 +1,32 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDo {
+
+	public static void main(String[] args) {
+		int num1 = 0;
+		int num2 = 0;
+		char resposta = 0;
+		do {
+			num1 = Integer.parseInt(JOptionPane.showInputDialog("numero 1"));
+			num2 = Integer.parseInt(JOptionPane.showInputDialog("numero 2"));
+			System.out.println("Resultado: " + (num1+num2));
+			resposta = JOptionPane.showInputDialog("errou o numero").charAt(0);
+		}while (num1!=num2);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

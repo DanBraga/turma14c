@@ -1,0 +1,31 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioDoSlide77 {
+
+	public static void main(String[] args) {
+
+		String escolaridade = JOptionPane.showInputDialog("digite sua escolaridade");
+		int contmedio=0;
+		int contsuperior=0;
+		int contpos=0;
+		do {
+			if (escolaridade.equals("medio")) {
+				contmedio = contmedio +1;
+			} if (escolaridade.equals("superior")) {
+				contsuperior=contsuperior+1;
+			} if (escolaridade.equals("pos")){
+				contpos=contpos+1;
+			}					
+		} while 
+			 (escolaridade.equals("medio") && escolaridade.equals("superior") && (escolaridade.equals("pos")));
+	
+		if (contmedio>contsuperior && contmedio>contpos) {
+			System.out.println("Maior valor é escolaridade media: " + contmedio);
+		} 
+		}
+	}
+
+
+

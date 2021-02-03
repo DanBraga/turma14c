@@ -1,0 +1,36 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoSimples {
+
+	public static void main(String[] args) {
+		/*
+		 * Capturar:
+		 * -Nome da disciplina
+		 * -duas notas
+		 * -calcular a media aritmetica
+		 * -exibir a Media e o nome da disciplina
+		 */
+		
+		String disciplina = JOptionPane.showInputDialog("Disciplina").toUpperCase();
+		short nota1 = Short.parseShort(JOptionPane.showInputDialog("Nota1:"));
+		short nota2 = Short.parseShort(JOptionPane.showInputDialog("Nota2:"));
+		
+		System.out.println("Disciplina..: " + disciplina);
+		System.out.println("Nota1.: " + nota1);
+		System.out.println("Nota2: " + nota2);
+		System.out.println("Media: " + nota1 * nota2 / 2);
+	
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

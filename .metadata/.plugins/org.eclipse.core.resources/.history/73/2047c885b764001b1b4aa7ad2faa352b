@@ -1,0 +1,55 @@
+package br.com.heranca.beans;
+
+public class Medio extends Formacao {
+
+	
+	private String tipo;
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	
+	public Medio() {
+		super();
+	}
+
+		
+	public Medio(String descricao, int periodo, int duracao, double mensalidade) {
+		super(descricao, periodo, duracao, mensalidade);
+		this.tipo = tipo;
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String toString() {
+		return "Medio [tipo=" + tipo + "]";
+	}
+
+	public void setAll(String descricao, int periodo, int duracao, double mensalidade, String tipo) {
+		super.setAll(descricao, periodo, duracao, mensalidade);
+		this.tipo = tipo;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

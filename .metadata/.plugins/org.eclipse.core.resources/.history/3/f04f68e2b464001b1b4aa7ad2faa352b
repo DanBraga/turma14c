@@ -1,0 +1,79 @@
+package br.com.heranca.beans;
+
+
+
+public class Formacao {
+	private String descricao;
+	private int periodo, duracao;
+	private double mensalidade;
+	
+	
+
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public int getPeriodo() {
+		return periodo;
+	}
+	public void setPeriodo(int periodo) {
+		this.periodo = periodo;
+	}
+	public int getDuracao() {
+		return duracao;
+	}
+	public void setDuracao(int duracao) {
+		this.duracao = duracao;
+	}
+	public double getMensalidade() {
+		return mensalidade;
+	}
+	public void setMensalidade(double mensalidade) {
+		this.mensalidade = mensalidade;
+	}
+	
+	
+
+	
+	public Formacao(String descricao, int periodo, int duracao, double mensalidade) {
+		super();
+		this.descricao = descricao;
+		this.periodo = periodo;
+		this.duracao = duracao;
+		this.mensalidade = mensalidade;
+	}
+
+	
+	
+	public void setAll(String descricao, int periodo, int duracao, double mensalidade) {
+		this.descricao = descricao;
+		this.periodo = periodo;
+		this.duracao = duracao;
+		this.mensalidade = mensalidade;
+	}
+	
+	public Formacao() {
+		super();
+	}
+	
+	@Override
+	public String toString() {
+		return "Formacao [descricao=" + descricao + ", periodo=" + periodo + ", duracao=" + duracao + ", mensalidade="
+				+ mensalidade + "]";
+	}
+	
+	
+	public String identificarCliente() {
+		if (this instanceof Medio) {
+			return "Medio";
+		} else if (this instanceof Tecnologo) {
+			return "Pessoa Juridica";
+		} else {
+			return "Pessoa";
+		}
+	}
+	
+	
+}

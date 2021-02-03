@@ -1,0 +1,23 @@
+package repeticao;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+	
+		/*
+		 * sintaxe for:
+		 * 1- identifica o contador e qual seu inicio
+		 * 2- condicao (ate onde deve repetir)
+		 * 3- Como sera a contagem
+		 */
+		
+		
+		for (int contador=0;contador<500;contador++) {
+			System.out.println(contador);
+		}
+					
+		
+
+	}
+
+}

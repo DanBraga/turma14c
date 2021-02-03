@@ -1,0 +1,18 @@
+package br.com.concessionaria.teste;
+
+import br.com.concessionaria.modelo.elevadores;
+
+public class TesteElevadores {
+
+	public static void main(String[] args) {
+		
+		
+		elevadores objeto = new elevadores();
+		System.out.println(objeto.entrar());
+			
+		
+
+
+	}
+
+}
